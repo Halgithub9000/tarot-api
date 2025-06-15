@@ -3,7 +3,7 @@ from app.repositories.tarot_repository import MarsellaTarotRepository
 
 
 def test_draw_cards_unique_and_reversed():
-    repo = MarsellaTarotRepository("app/data/marsella_cards.json")
+    repo = MarsellaTarotRepository()
     deck = MarsellaDeck(repo)
     drawn = deck.draw(3)
     assert len(drawn) == 3
