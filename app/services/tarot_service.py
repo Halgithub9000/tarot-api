@@ -5,7 +5,7 @@ from typing import Protocol
 
 class TarotService(Protocol):
 
-    def draw_cards(self, n: int):
+    def spread_cards(self, n: int):
         ...
 
 
@@ -14,5 +14,5 @@ class MarsellaTarotService(TarotService):
         repo = MarsellaTarotRepository()
         self.deck = MarsellaDeck(repo)
 
-    def draw_cards(self, n: int):
-        return self.deck.draw(n)
+    def spread_cards(self, n: int, intention: str):
+        return self.deck.spread(n, intention)

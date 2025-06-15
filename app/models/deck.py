@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List
 from app.models.card import Card
+from app.models.spread import Spread
 
 
 class Deck(ABC):
@@ -13,14 +14,15 @@ class Deck(ABC):
         random.shuffle(cards)
         return cards
 
-    def draw(self, n: int) -> List[Card]:
+    def spread(self, n: int, intention: str) -> Spread:
         cards = self.get_cards()
         shuffled = self.shuffle(cards)
         drawn = shuffled[:n]
         import random
         for card in drawn:
             card.is_reversed = random.choice([True, False])
-        return drawn
+        spread = Spread(cards=drawn, intention=intention)
+        return spread
 
 
 class MarsellaDeck(Deck):
