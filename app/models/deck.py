@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List
 from app.models.card import Card
-from app.models.spread import Spread
+from app.schemas.spread import Spread
 
 
 class Deck(ABC):
