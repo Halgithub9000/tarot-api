@@ -7,3 +7,4 @@ class Card(BaseModel):
     meaning_up: str
     meaning_reversed: str
     is_reversed: bool = False
+    image_url: str

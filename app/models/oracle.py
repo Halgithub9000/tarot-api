@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from app.schemas.spread import Spread
-from app.adapters.llm_adapter import LLMAdapter, LLMDedpseekR10528Adapter
+from app.adapters.llm_adapter import LLMDedpseekR10528Adapter
 
 
 class Oracle:
@@ -20,7 +20,7 @@ class Oracle:
             "Utiliza un tono amable y ligeramente informal para que la interpretación sea más cercana y comprensible. "\
             "La tirada no es adivinatoria, sino que enfocada en un consejo a partir de los simbolos de cada carta."\
             "Enfócate principalmente en la intención que señalaré luego y suma a la interpretación de cada carta una "\
-            "descripción de sus símbolos. Haz la interpretacón de forma detallada"
+            "descripción de sus símbolos. Haz la interpretacón de forma detallada. Cartas e intención a continuación: "
 
         prompt = self.build_prompt(spread, question)
         return self.llm_adapter.generate_interpretation(prompt)
@@ -40,10 +40,10 @@ class Oracle:
         Incluye el nombre, versión, descripción del oráculo, intención de la tirada y descripción de las cartas.
         """
 
-        cards_names = ", ".join(card.name + (" (invertida)" if card.is_reversed else "(al derecho)")
+        cards_names = ", ".join(card.name + ("(invertida)" if card.is_reversed else "(al derecho)")
                                 for card in spread.cards)
 
-        promptfinal = question + "Intención de la tirada: " + \
+        prompt = question + "Intención de la tirada: " + \
             spread.intention + " Cartas: " + cards_names
 
-        return promptfinal
+        return prompt

@@ -1,464 +1,548 @@
 [
+        {
+        "name": "El Loco",
+        "suit": "Mayor",
+        "meaning_up": "Nuevos comienzos, aventura, libertad, espontaneidad.",
+        "meaning_reversed": "Inmadurez, imprudencia, falta de dirección, caos.",
+        "image_url": "/static/tarot_marsella/el_loco.jpg"
+    },
     {
         "name": "El Mago",
         "suit": "Mayor",
         "meaning_up": "Habilidad, recursos, poder de manifestación, acción consciente.",
-        "meaning_reversed": "Manipulación, engaño, falta de energía, oportunidades perdidas."
+        "meaning_reversed": "Manipulación, engaño, falta de energía, oportunidades perdidas.",
+        "image_url": "/static/tarot_marsella/el_mago.jpg"
     },
     {
-        "name": "La Papisa",
+        "name": "La Sacerdotiza",
         "suit": "Mayor",
         "meaning_up": "Sabiduría, intuición, misterio, conocimiento oculto.",
-        "meaning_reversed": "Secretos, desconexión con la intuición, superficialidad."
+        "meaning_reversed": "Secretos, desconexión con la intuición, superficialidad.",
+        "image_url": "/static/tarot_marsella/la_sacerdotisa.jpg"
     },
     {
         "name": "La Emperatriz",
         "suit": "Mayor",
         "meaning_up": "Abundancia, fertilidad, creatividad, crecimiento.",
-        "meaning_reversed": "Dependencia, bloqueos creativos, problemas maternos."
+        "meaning_reversed": "Dependencia, bloqueos creativos, problemas maternos.",
+        "image_url": "/static/tarot_marsella/la_emperatriz.jpg"
     },
     {
         "name": "El Emperador",
         "suit": "Mayor",
         "meaning_up": "Autoridad, estructura, control, liderazgo.",
-        "meaning_reversed": "Rigidez, autoritarismo, falta de disciplina."
+        "meaning_reversed": "Rigidez, autoritarismo, falta de disciplina.",
+        "image_url": "/static/tarot_marsella/el_emperador.jpg"
     },
     {
-        "name": "El Papa",
+        "name": "El Sumo Sacerdote",
         "suit": "Mayor",
         "meaning_up": "Sabiduría espiritual, tradición, consejo, moralidad.",
-        "meaning_reversed": "Dogmatismo, rebeldía, malos consejos."
+        "meaning_reversed": "Dogmatismo, rebeldía, malos consejos.",
+        "image_url": "/static/tarot_marsella/el_sumo_sacerdote.jpg"
     },
     {
-        "name": "El Enamorado",
+        "name": "Los Enamorados",
         "suit": "Mayor",
         "meaning_up": "Elección, amor, unión, armonía.",
-        "meaning_reversed": "Indecisión, rupturas, tentaciones."
+        "meaning_reversed": "Indecisión, rupturas, tentaciones.",
+        "image_url": "/static/tarot_marsella/los_enamorados.jpg"
     },
     {
         "name": "El Carro",
         "suit": "Mayor",
         "meaning_up": "Victoria, determinación, avance, control.",
-        "meaning_reversed": "Falta de dirección, agresividad, bloqueos."
+        "meaning_reversed": "Falta de dirección, agresividad, bloqueos.",
+        "image_url": "/static/tarot_marsella/el_carro.jpg"
     },
     {
         "name": "La Justicia",
         "suit": "Mayor",
         "meaning_up": "Equilibrio, justicia, verdad, toma de decisiones.",
-        "meaning_reversed": "Injusticia, parcialidad, deshonestidad."
+        "meaning_reversed": "Injusticia, parcialidad, deshonestidad.",
+        "image_url": "/static/tarot_marsella/la_justicia.jpg"
     },
     {
         "name": "El Ermitaño",
         "suit": "Mayor",
         "meaning_up": "Búsqueda interior, introspección, soledad constructiva.",
-        "meaning_reversed": "Aislamiento, soledad negativa, rechazo a la ayuda."
+        "meaning_reversed": "Aislamiento, soledad negativa, rechazo a la ayuda.",
+        "image_url": "/static/tarot_marsella/el_ermitano.jpg"
     },
     {
         "name": "La Rueda de la Fortuna",
         "suit": "Mayor",
         "meaning_up": "Cambio, ciclos, destino, suerte.",
-        "meaning_reversed": "Bloqueos, mala fortuna, estancamiento."
+        "meaning_reversed": "Bloqueos, mala fortuna, estancamiento.",
+        "image_url": "/static/tarot_marsella/la_rueda_de_fortuna.jpg"
     },
     {
         "name": "La Fuerza",
         "suit": "Mayor",
         "meaning_up": "Valor, control interior, paciencia, dominio de uno mismo.",
-        "meaning_reversed": "Impulsividad, debilidad, falta de coraje."
+        "meaning_reversed": "Impulsividad, debilidad, falta de coraje.",
+        "image_url": "/static/tarot_marsella/la_fuerza.jpg"
     },
     {
         "name": "El Colgado",
         "suit": "Mayor",
         "meaning_up": "Sacrificio, pausa, nueva perspectiva, rendición.",
-        "meaning_reversed": "Estancamiento, resistencia al cambio, victimismo."
+        "meaning_reversed": "Estancamiento, resistencia al cambio, victimismo.",
+        "image_url": "/static/tarot_marsella/el_colgado.jpg"
     },
     {
         "name": "La Muerte",
         "suit": "Mayor",
         "meaning_up": "Transformación, finales, nuevos comienzos, cambio radical.",
-        "meaning_reversed": "Resistencia al cambio, miedo, estancamiento."
+        "meaning_reversed": "Resistencia al cambio, miedo, estancamiento.",
+        "image_url": "/static/tarot_marsella/la_muerte.jpg"
     },
     {
         "name": "La Templanza",
         "suit": "Mayor",
         "meaning_up": "Equilibrio, armonía, paciencia, moderación.",
-        "meaning_reversed": "Excesos, desbalance, falta de autocontrol."
+        "meaning_reversed": "Excesos, desbalance, falta de autocontrol.",
+        "image_url": "/static/tarot_marsella/la_templanza.jpg"
     },
     {
         "name": "El Diablo",
         "suit": "Mayor",
         "meaning_up": "Apegos, tentaciones, materialismo, ataduras.",
-        "meaning_reversed": "Liberación, superación de adicciones, independencia."
+        "meaning_reversed": "Liberación, superación de adicciones, independencia.",
+        "image_url": "/static/tarot_marsella/el_diablo.jpg"
     },
     {
         "name": "La Torre",
         "suit": "Mayor",
         "meaning_up": "Ruptura, caos, revelaciones, crisis.",
-        "meaning_reversed": "Evitación del desastre, miedo al cambio, reconstrucción."
+        "meaning_reversed": "Evitación del desastre, miedo al cambio, reconstrucción.",
+        "image_url": "/static/tarot_marsella/la_torre.jpg"
     },
     {
         "name": "La Estrella",
         "suit": "Mayor",
         "meaning_up": "Esperanza, inspiración, sanación, fe.",
-        "meaning_reversed": "Desánimo, falta de fe, pesimismo."
+        "meaning_reversed": "Desánimo, falta de fe, pesimismo.",
+        "image_url": "/static/tarot_marsella/la_estrella.jpg"
     },
     {
         "name": "La Luna",
         "suit": "Mayor",
         "meaning_up": "Intuición, ilusiones, confusión, sueños.",
-        "meaning_reversed": "Claridad, superación de miedos, revelación de verdades."
+        "meaning_reversed": "Claridad, superación de miedos, revelación de verdades.",
+        "image_url": "/static/tarot_marsella/la_luna.jpg"
     },
     {
         "name": "El Sol",
         "suit": "Mayor",
         "meaning_up": "Éxito, alegría, claridad, vitalidad.",
-        "meaning_reversed": "Arrogancia, exceso de optimismo, decepción."
+        "meaning_reversed": "Arrogancia, exceso de optimismo, decepción.",
+        "image_url": "/static/tarot_marsella/el_sol.jpg"
     },
     {
         "name": "El Juicio",
         "suit": "Mayor",
         "meaning_up": "Renacimiento, juicio, llamado interior, redención.",
-        "meaning_reversed": "Negación, miedo al cambio, remordimientos."
+        "meaning_reversed": "Negación, miedo al cambio, remordimientos.",
+        "image_url": "/static/tarot_marsella/el_juicio.jpg"
     },
     {
         "name": "El Mundo",
         "suit": "Mayor",
         "meaning_up": "Realización, completitud, logro, integración.",
-        "meaning_reversed": "Falta de cierre, obstáculos, retrasos."
+        "meaning_reversed": "Falta de cierre, obstáculos, retrasos.",
+        "image_url": "/static/tarot_marsella/el_mundo.jpg"
     },
     {
         "name": "As de Bastos",
         "suit": "Bastos",
         "meaning_up": "Nueva energía, inspiración, comienzos creativos.",
-        "meaning_reversed": "Bloqueo creativo, falta de dirección."
+        "meaning_reversed": "Bloqueo creativo, falta de dirección.",
+        "image_url": "/static/tarot_marsella/1_bastos.jpg"
     },
     {
         "name": "Dos de Bastos",
         "suit": "Bastos",
         "meaning_up": "Planeación, visión, decisiones.",
-        "meaning_reversed": "Temor a lo desconocido, indecisión."
+        "meaning_reversed": "Temor a lo desconocido, indecisión.",
+        "image_url": "/static/tarot_marsella/2_bastos.jpg"
     },
     {
         "name": "Tres de Bastos",
         "suit": "Bastos",
         "meaning_up": "Expansión, progreso, oportunidades.",
-        "meaning_reversed": "Retrasos, falta de progreso."
+        "meaning_reversed": "Retrasos, falta de progreso.",
+        "image_url": "/static/tarot_marsella/3_bastos.jpg"
     },
     {
         "name": "Cuatro de Bastos",
         "suit": "Bastos",
         "meaning_up": "Celebración, hogar, logros.",
-        "meaning_reversed": "Desacuerdos familiares, transiciones."
+        "meaning_reversed": "Desacuerdos familiares, transiciones.",
+        "image_url": "/static/tarot_marsella/4_bastos.jpg"
     },
     {
         "name": "Cinco de Bastos",
         "suit": "Bastos",
         "meaning_up": "Conflicto, competencia, desafíos.",
-        "meaning_reversed": "Evitar conflictos, resolución."
+        "meaning_reversed": "Evitar conflictos, resolución.",
+        "image_url": "/static/tarot_marsella/5_bastos.jpg"
     },
     {
         "name": "Seis de Bastos",
         "suit": "Bastos",
         "meaning_up": "Reconocimiento, victoria, avance.",
-        "meaning_reversed": "Exceso de ego, retrasos."
+        "meaning_reversed": "Exceso de ego, retrasos.",
+        "image_url": "/static/tarot_marsella/6_bastos.jpg"
     },
     {
         "name": "Siete de Bastos",
         "suit": "Bastos",
         "meaning_up": "Defensa, perseverancia, coraje.",
-        "meaning_reversed": "Rendirse, sentirse sobrepasado."
+        "meaning_reversed": "Rendirse, sentirse sobrepasado.",
+        "image_url": "/static/tarot_marsella/7_bastos.jpg"
     },
     {
         "name": "Ocho de Bastos",
         "suit": "Bastos",
         "meaning_up": "Rapidez, acción, movimiento.",
-        "meaning_reversed": "Retrasos, frustraciones."
+        "meaning_reversed": "Retrasos, frustraciones.",
+        "image_url": "/static/tarot_marsella/8_bastos.jpg"
     },
     {
         "name": "Nueve de Bastos",
         "suit": "Bastos",
         "meaning_up": "Resiliencia, persistencia, defensa.",
-        "meaning_reversed": "Desconfianza, agotamiento."
+        "meaning_reversed": "Desconfianza, agotamiento.",
+        "image_url": "/static/tarot_marsella/9_bastos.jpg"
     },
     {
         "name": "Diez de Bastos",
         "suit": "Bastos",
         "meaning_up": "Carga, responsabilidades, esfuerzo.",
-        "meaning_reversed": "Liberación de cargas, delegar."
+        "meaning_reversed": "Liberación de cargas, delegar.",
+        "image_url": "/static/tarot_marsella/10_bastos.jpg"
     },
     {
         "name": "Sota de Bastos",
         "suit": "Bastos",
         "meaning_up": "Entusiasmo, ideas nuevas, mensajero.",
-        "meaning_reversed": "Inmadurez, distracción."
+        "meaning_reversed": "Inmadurez, distracción.",
+        "image_url": "/static/tarot_marsella/sota_bastos.jpg"
     },
     {
         "name": "Caballo de Bastos",
         "suit": "Bastos",
         "meaning_up": "Aventura, energía, pasión.",
-        "meaning_reversed": "Impulsividad, falta de dirección."
+        "meaning_reversed": "Impulsividad, falta de dirección.",
+        "image_url": "/static/tarot_marsella/caballo_bastos.jpg"
     },
     {
         "name": "Reina de Bastos",
         "suit": "Bastos",
         "meaning_up": "Confianza, independencia, determinación.",
-        "meaning_reversed": "Celos, agresividad."
+        "meaning_reversed": "Celos, agresividad.",
+        "image_url": "/static/tarot_marsella/reina_bastos.jpg"
     },
     {
         "name": "Rey de Bastos",
         "suit": "Bastos",
         "meaning_up": "Liderazgo, visión, carisma.",
-        "meaning_reversed": "Dominancia, imprudencia."
+        "meaning_reversed": "Dominancia, imprudencia.",
+        "image_url": "/static/tarot_marsella/rey_bastos.jpg"
     },
     {
         "name": "As de Copas",
         "suit": "Copas",
         "meaning_up": "Nuevos sentimientos, amor, creatividad.",
-        "meaning_reversed": "Bloqueo emocional, reprimir sentimientos."
+        "meaning_reversed": "Bloqueo emocional, reprimir sentimientos.",
+        "image_url": "/static/tarot_marsella/1_copas.jpg"
     },
     {
         "name": "Dos de Copas",
         "suit": "Copas",
         "meaning_up": "Unión, amor, conexión.",
-        "meaning_reversed": "Ruptura, desarmonía."
+        "meaning_reversed": "Ruptura, desarmonía.",
+        "image_url": "/static/tarot_marsella/2_copas.jpg"
     },
     {
         "name": "Tres de Copas",
         "suit": "Copas",
         "meaning_up": "Celebración, amistad, reuniones.",
-        "meaning_reversed": "Excesos, chismes."
+        "meaning_reversed": "Excesos, chismes.",
+        "image_url": "/static/tarot_marsella/3_copas.jpg"
     },
     {
         "name": "Cuatro de Copas",
         "suit": "Copas",
         "meaning_up": "Reflexión, apatía, oportunidad oculta.",
-        "meaning_reversed": "Nueva perspectiva, motivación renovada."
+        "meaning_reversed": "Nueva perspectiva, motivación renovada.",
+        "image_url": "/static/tarot_marsella/4_copas.jpg"
     },
     {
         "name": "Cinco de Copas",
         "suit": "Copas",
         "meaning_up": "Pérdida, duelo, decepción.",
-        "meaning_reversed": "Superar el pasado, aceptación."
+        "meaning_reversed": "Superar el pasado, aceptación.",
+        "image_url": "/static/tarot_marsella/5_copas.jpg"
     },
     {
         "name": "Seis de Copas",
         "suit": "Copas",
         "meaning_up": "Nostalgia, recuerdos, reencuentros.",
-        "meaning_reversed": "Aferrarse al pasado, estancamiento."
+        "meaning_reversed": "Aferrarse al pasado, estancamiento.",
+        "image_url": "/static/tarot_marsella/6_copas.jpg"
     },
     {
         "name": "Siete de Copas",
         "suit": "Copas",
         "meaning_up": "Opciones, ilusiones, fantasía.",
-        "meaning_reversed": "Claridad, tomar decisiones."
+        "meaning_reversed": "Claridad, tomar decisiones.",
+        "image_url": "/static/tarot_marsella/7_copas.jpg"
     },
     {
         "name": "Ocho de Copas",
         "suit": "Copas",
         "meaning_up": "Abandono, búsqueda, dejar atrás.",
-        "meaning_reversed": "Miedo a soltar, indecisión."
+        "meaning_reversed": "Miedo a soltar, indecisión.",
+        "image_url": "/static/tarot_marsella/8_copas.jpg"
     },
     {
         "name": "Nueve de Copas",
         "suit": "Copas",
         "meaning_up": "Satisfacción, deseos cumplidos, bienestar.",
-        "meaning_reversed": "Insatisfacción, excesos."
+        "meaning_reversed": "Insatisfacción, excesos.",
+        "image_url": "/static/tarot_marsella/9_copas.jpg"
     },
     {
         "name": "Diez de Copas",
         "suit": "Copas",
         "meaning_up": "Felicidad, armonía, hogar.",
-        "meaning_reversed": "Desarmonía, conflictos familiares."
+        "meaning_reversed": "Desarmonía, conflictos familiares.",
+        "image_url": "/static/tarot_marsella/10_copas.jpg"
     },
     {
         "name": "Sota de Copas",
         "suit": "Copas",
         "meaning_up": "Sensibilidad, mensajes, creatividad.",
-        "meaning_reversed": "Inmadurez emocional, inseguridad."
+        "meaning_reversed": "Inmadurez emocional, inseguridad.",
+        "image_url": "/static/tarot_marsella/sota_copas.jpg"
     },
     {
         "name": "Caballo de Copas",
         "suit": "Copas",
         "meaning_up": "Romanticismo, propuestas, idealismo.",
-        "meaning_reversed": "Desilusión, inconstancia."
+        "meaning_reversed": "Desilusión, inconstancia.",
+        "image_url": "/static/tarot_marsella/caballo_copas.jpg"
     },
     {
         "name": "Reina de Copas",
         "suit": "Copas",
         "meaning_up": "Empatía, comprensión, intuición.",
-        "meaning_reversed": "Dependencia emocional, manipulación."
+        "meaning_reversed": "Dependencia emocional, manipulación.",
+        "image_url": "/static/tarot_marsella/reina_copas.jpg"
     },
     {
         "name": "Rey de Copas",
         "suit": "Copas",
         "meaning_up": "Equilibrio emocional, diplomacia, sabiduría.",
-        "meaning_reversed": "Represión emocional, frialdad."
+        "meaning_reversed": "Represión emocional, frialdad.",
+        "image_url": "/static/tarot_marsella/rey_copas.jpg"
     },
     {
         "name": "As de Espadas",
         "suit": "Espadas",
         "meaning_up": "Claridad, verdad, nuevos comienzos mentales.",
-        "meaning_reversed": "Confusión, malentendidos."
+        "meaning_reversed": "Confusión, malentendidos.",
+        "image_url": "/static/tarot_marsella/1_espadas.jpg"
     },
     {
         "name": "Dos de Espadas",
         "suit": "Espadas",
         "meaning_up": "Decisión difícil, bloqueo emocional.",
-        "meaning_reversed": "Indecisión, evitar la verdad."
+        "meaning_reversed": "Indecisión, evitar la verdad.",
+        "image_url": "/static/tarot_marsella/2_espadas.jpg"
     },
     {
         "name": "Tres de Espadas",
         "suit": "Espadas",
         "meaning_up": "Dolor, traición, tristeza.",
-        "meaning_reversed": "Superar el dolor, perdón."
+        "meaning_reversed": "Superar el dolor, perdón.",
+        "image_url": "/static/tarot_marsella/3_espadas.jpg"
     },
     {
         "name": "Cuatro de Espadas",
         "suit": "Espadas",
         "meaning_up": "Descanso, recuperación, pausa.",
-        "meaning_reversed": "Inquietud, estrés, agotamiento."
+        "meaning_reversed": "Inquietud, estrés, agotamiento.",
+        "image_url": "/static/tarot_marsella/4_espadas.jpg"
     },
     {
         "name": "Cinco de Espadas",
         "suit": "Espadas",
         "meaning_up": "Conflicto, derrota, egoísmo.",
-        "meaning_reversed": "Reconciliación, aprendizaje."
+        "meaning_reversed": "Reconciliación, aprendizaje.",
+        "image_url": "/static/tarot_marsella/5_espadas.jpg"
     },
     {
         "name": "Seis de Espadas",
         "suit": "Espadas",
         "meaning_up": "Transición, cambio, viaje.",
-        "meaning_reversed": "Resistencia al cambio, estancamiento."
+        "meaning_reversed": "Resistencia al cambio, estancamiento.",
+        "image_url": "/static/tarot_marsella/6_espadas.jpg"
     },
     {
         "name": "Siete de Espadas",
         "suit": "Espadas",
         "meaning_up": "Estrategia, discreción, evasión.",
-        "meaning_reversed": "Descubrimiento, confesión."
+        "meaning_reversed": "Descubrimiento, confesión.",
+        "image_url": "/static/tarot_marsella/7_espadas.jpg"
     },
     {
         "name": "Ocho de Espadas",
         "suit": "Espadas",
         "meaning_up": "Restricción, sensación de estar atrapado.",
-        "meaning_reversed": "Liberación, nuevos caminos."
+        "meaning_reversed": "Liberación, nuevos caminos.",
+        "image_url": "/static/tarot_marsella/8_espadas.jpg"
     },
     {
         "name": "Nueve de Espadas",
         "suit": "Espadas",
         "meaning_up": "Ansiedad, insomnio, preocupaciones.",
-        "meaning_reversed": "Superación del miedo, esperanza."
+        "meaning_reversed": "Superación del miedo, esperanza.",
+        "image_url": "/static/tarot_marsella/9_espadas.jpg"
     },
     {
         "name": "Diez de Espadas",
         "suit": "Espadas",
         "meaning_up": "Final doloroso, ruina, traición.",
-        "meaning_reversed": "Renacimiento, recuperación."
+        "meaning_reversed": "Renacimiento, recuperación.",
+        "image_url": "/static/tarot_marsella/10_espadas.jpg"
     },
     {
         "name": "Sota de Espadas",
         "suit": "Espadas",
         "meaning_up": "Curiosidad, vigilancia, mensajes.",
-        "meaning_reversed": "Chismes, inmadurez."
+        "meaning_reversed": "Chismes, inmadurez.",
+        "image_url": "/static/tarot_marsella/sota_espadas.jpg"
     },
     {
         "name": "Caballo de Espadas",
         "suit": "Espadas",
         "meaning_up": "Impulso, acción rápida, ambición.",
-        "meaning_reversed": "Impulsividad, conflicto."
+        "meaning_reversed": "Impulsividad, conflicto.",
+        "image_url": "/static/tarot_marsella/caballo_espadas.jpg"
     },
     {
         "name": "Reina de Espadas",
         "suit": "Espadas",
         "meaning_up": "Independencia, percepción, honestidad.",
-        "meaning_reversed": "Crueldad, frialdad."
+        "meaning_reversed": "Crueldad, frialdad.",
+        "image_url": "/static/tarot_marsella/reina_espadas.jpg"
     },
     {
         "name": "Rey de Espadas",
         "suit": "Espadas",
         "meaning_up": "Autoridad intelectual, verdad, lógica.",
-        "meaning_reversed": "Tiranía, manipulación."
+        "meaning_reversed": "Tiranía, manipulación.",
+        "image_url": "/static/tarot_marsella/rey_espadas.jpg"
     },
     {
         "name": "As de Oros",
         "suit": "Oros",
         "meaning_up": "Nuevos comienzos materiales, prosperidad, oportunidad.",
-        "meaning_reversed": "Pérdida, oportunidades desperdiciadas."
+        "meaning_reversed": "Pérdida, oportunidades desperdiciadas.",
+        "image_url": "/static/tarot_marsella/1_oros.jpg"
     },
     {
         "name": "Dos de Oros",
         "suit": "Oros",
         "meaning_up": "Equilibrio, adaptabilidad, prioridades.",
-        "meaning_reversed": "Desbalance, mala administración."
+        "meaning_reversed": "Desbalance, mala administración.",
+        "image_url": "/static/tarot_marsella/2_oros.jpg"
     },
     {
         "name": "Tres de Oros",
         "suit": "Oros",
         "meaning_up": "Trabajo en equipo, colaboración, crecimiento.",
-        "meaning_reversed": "Desacuerdos, falta de reconocimiento."
+        "meaning_reversed": "Desacuerdos, falta de reconocimiento.",
+        "image_url": "/static/tarot_marsella/3_oros.jpg"
     },
     {
         "name": "Cuatro de Oros",
         "suit": "Oros",
         "meaning_up": "Seguridad, control, estabilidad.",
-        "meaning_reversed": "Avaricia, miedo a perder."
+        "meaning_reversed": "Avaricia, miedo a perder.",
+        "image_url": "/static/tarot_marsella/4_oros.jpg"
     },
     {
         "name": "Cinco de Oros",
         "suit": "Oros",
         "meaning_up": "Dificultades materiales, carencia, exclusión.",
-        "meaning_reversed": "Recuperación, ayuda disponible."
+        "meaning_reversed": "Recuperación, ayuda disponible.",
+        "image_url": "/static/tarot_marsella/5_oros.jpg"
     },
     {
         "name": "Seis de Oros",
         "suit": "Oros",
         "meaning_up": "Generosidad, ayuda, compartir.",
-        "meaning_reversed": "Egoísmo, dependencia."
+        "meaning_reversed": "Egoísmo, dependencia.",
+        "image_url": "/static/tarot_marsella/6_oros.jpg"
     },
     {
         "name": "Siete de Oros",
         "suit": "Oros",
         "meaning_up": "Evaluación, paciencia, espera de resultados.",
-        "meaning_reversed": "Impaciencia, falta de recompensa."
+        "meaning_reversed": "Impaciencia, falta de recompensa.",
+        "image_url": "/static/tarot_marsella/7_oros.jpg"
     },
     {
         "name": "Ocho de Oros",
         "suit": "Oros",
         "meaning_up": "Dedicación, perfeccionamiento, aprendizaje.",
-        "meaning_reversed": "Descuido, mediocridad."
+        "meaning_reversed": "Descuido, mediocridad.",
+        "image_url": "/static/tarot_marsella/8_oros.jpg"
     },
     {
         "name": "Nueve de Oros",
         "suit": "Oros",
         "meaning_up": "Logro, éxito material, autosuficiencia.",
-        "meaning_reversed": "Dependencia, superficialidad."
+        "meaning_reversed": "Dependencia, superficialidad.",
+        "image_url": "/static/tarot_marsella/9_oros.jpg"
     },
     {
         "name": "Diez de Oros",
         "suit": "Oros",
         "meaning_up": "Herencia, riqueza familiar, estabilidad a largo plazo.",
-        "meaning_reversed": "Problemas familiares, pérdidas."
+        "meaning_reversed": "Problemas familiares, pérdidas.",
+        "image_url": "/static/tarot_marsella/10_oros.jpg"
     },
     {
         "name": "Sota de Oros",
         "suit": "Oros",
         "meaning_up": "Estudio, oportunidad, ambición.",
-        "meaning_reversed": "Falta de enfoque, inmadurez."
+        "meaning_reversed": "Falta de enfoque, inmadurez.",
+        "image_url": "/static/tarot_marsella/sota_oros.jpg"
     },
     {
         "name": "Caballo de Oros",
         "suit": "Oros",
         "meaning_up": "Esfuerzo constante, responsabilidad, perseverancia.",
-        "meaning_reversed": "Rutina, terquedad."
+        "meaning_reversed": "Rutina, terquedad.",
+        "image_url": "/static/tarot_marsella/caballo_oros.jpg"
     },
     {
         "name": "Reina de Oros",
         "suit": "Oros",
         "meaning_up": "Practicidad, abundancia, generosidad.",
-        "meaning_reversed": "Materialismo, descuido del hogar."
+        "meaning_reversed": "Materialismo, descuido del hogar.",
+        "image_url": "/static/tarot_marsella/reina_oros.jpg"
     },
     {
         "name": "Rey de Oros",
         "suit": "Oros",
         "meaning_up": "Éxito empresarial, seguridad, abundancia.",
-        "meaning_reversed": "Codicia, corrupción."
+        "meaning_reversed": "Codicia, corrupción.",
+        "image_url": "/static/tarot_marsella/rey_oros.jpg"
     }
 ]
