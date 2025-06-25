@@ -1,9 +1,12 @@
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+import os
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
 from slowapi import Limiter, _rate_limit_exceeded_handler
-from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 
+load_dotenv()
 limiter = Limiter(key_func=lambda request: "global")
 
 
@@ -14,21 +17,22 @@ def create_app() -> FastAPI:
     app.state.limiter = limiter
     app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
-    # (Descomenta y ajusta si necesitas CORS)
-    # origins = [
-    #    "http://localhost:5173",
-    #    "http://localhost:3000",
-    #    "http://127.0.0.1",
-    #    "http://127.0.0.1:3000"
+    frontend_origin = os.getenv("FRONTEND_ORIGIN")
 
-    # ]
-    # app.add_middleware(
-    #    CORSMiddleware,
-    #    allow_origins=origins,
-    #    allow_credentials=True,
-    #    allow_methods=["*"],
-    #    allow_headers=["*"],
-    # )
+    origins = [
+        frontend_origin
+    ]
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=origins,
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
+
+    # Montar la carpeta de archivos estáticos
+    static_dir = os.path.join(os.path.dirname(__file__), "static")
+    app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
     from app.api.api_oraculo import api_oraculo
     from app.api.api_tarot_marsella import api_tarot
