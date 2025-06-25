@@ -8,7 +8,7 @@ api_tarot = APIRouter(tags=["tarot"])
 
 
 @api_tarot.get("/get-spread", response_model=Spread)
-@limiter.limit("15/minute")
-def spread_cards(request: Request, num_cards: int = 3, intention: str = "general", api_key: str = Depends(verify_api_key)):
+@limiter.limit("5/minute")
+def spread_cards(request: Request, num_cards: int = 3, intention: str = "general"):
     tarot_service = MarsellaTarotService()
     return tarot_service.spread_cards(num_cards, intention)
