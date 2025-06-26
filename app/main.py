@@ -17,8 +17,7 @@ def create_app() -> FastAPI:
     app.state.limiter = limiter
     app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
-    frontend_origin = os.getenv(
-        "FRONTEND_ORIGIN", "https://tarot-severopg.netlify.app")
+    frontend_origin = os.getenv("FRONTEND_ORIGIN")
     origins = [
         frontend_origin
     ]
