@@ -16,20 +16,31 @@ class Oracle:
         self.llm_adapter = LLMDedpseekR10528Adapter(HF_TOKEN)
 
     def do_full_reading(self, spread: Spread) -> str:
-        question = "Actúa como alguien que sabe leer el tarot en español e interpreta mi tarot diario de 3 cartas. "\
-            "Utiliza un tono amable y ligeramente informal para que la interpretación sea más cercana y comprensible. "\
-            "La tirada no es adivinatoria, sino que enfocada en un consejo a partir de los simbolos de cada carta."\
-            "Enfócate principalmente en la intención que señalaré luego y suma a la interpretación de cada carta una "\
-            "descripción de sus símbolos. Haz la interpretacón de forma detallada. Cartas e intención a continuación: "
-
+        question = "Actúa como una tarotista sabia y empática," \
+            "que interpreta las cartas de forma comprensiva, cercana y en correcto español a "\
+            "un consultante del tarot buscando guía y claridad sobre su vida."\
+            "Con base las cartas e intención que te proporcionaré, "\
+            "entrega una interpretación detallada, en no más de 500 palabras , escrita en un lenguaje natural, cálido y humano."\
+            "La interpretación debe abordar posibles situaciones actuales de la persona, "\
+            "aprendizajes que está viviendo, y consejos o advertencias para su camino."  \
+            "No seas determinista, sino orientadora; deja espacio a la reflexión y al libre albedrío."\
+            "Evita lenguaje mecánico o robótico. Usa un tono similar al de una tarotista real:" \
+            "profundo, intuitivo, amable.\n"
         prompt = self.build_prompt(spread, question)
         return self.llm_adapter.generate_interpretation(prompt)
 
     def do_shallow_reading(self, spread: Spread) -> str:
-        question = "Actúa como alguien que sabe leer el tarot en español e interpreta mi tarot diario de 3 cartas. "\
-            "Utiliza un tono amable y ligeramente informal para que la interpretación sea más cercana y comprensible. " \
-            "Haz la interpretacion de la manera resumida más resumida posible" \
-            "Enfócate principalmente en la intención que señalaré a continuación : "
+        question = "Actúa como una tarotista sabia y empática. Realiza una interpretación del " \
+            "tarot en no más de 250 palabras, usando un lenguaje cálido e intuitivo. " \
+            "Instrucciones: " \
+            "- Interpreta el significado de cada carta " \
+            "- Conecta las cartas en una narrativa fluida " \
+            "- Ofrece consejos prácticos pero no deterministas " \
+            "- Mantén un tono cercano y comprensivo " \
+            "- Invita a la reflexión personal " \
+            "- Evita lenguaje técnico o impersonal  " \
+            "- Usa un lenguaje natural y cercano como si hablaras directamente a la persona" \
+            "- Exprésate en segunda persona"
 
         prompt = self.build_prompt(spread, question)
         return self.llm_adapter.generate_interpretation(prompt)
@@ -40,10 +51,17 @@ class Oracle:
         Incluye el nombre, versión, descripción del oráculo, intención de la tirada y descripción de las cartas.
         """
 
-        cards_names = ", ".join(card.name + ("(invertida)" if card.is_reversed else "(al derecho)")
-                                for card in spread.cards)
+        card_names = "\n".join(
+            f"{idx+1}. {card.name} {'(invertida)' if card.is_reversed else '(al derecho)'}"
+            for idx, card in enumerate(spread.cards)
+        )
 
-        prompt = question + "Intención de la tirada: " + \
-            spread.intention + " Cartas: " + cards_names
+        prompt = (
+            f"{question}\n"
+            f"Cartas e intención : \n{card_names}\n"
+            f"Intención: {spread.intention}"
+        )
+
+        print(prompt)
 
         return prompt

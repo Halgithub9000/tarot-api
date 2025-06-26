@@ -18,7 +18,6 @@ class LLMAdapter(Protocol):
             "model": self.model
         }
 
-        print(self.endpoint + " " + str(payload) + " " + str(headers))
         response = requests.post(
             self.endpoint, headers=headers, json=payload, timeout=120)
 
@@ -59,6 +58,16 @@ class LLMDedpseekR10528Adapter(LLMAdapter):
         load_dotenv()
         model = os.getenv("HF_DEEPSEEK-R1-0528-MODEL-ID")
         endpoint = os.getenv("HF_DEEPSEEK-R1-0528-ENDPOINT")
+        self.api_key = api_key
+        self.model = model
+        self.endpoint = endpoint
+
+
+class ClaudeHaiku35Adapter(LLMAdapter):
+    def __init__(self, api_key: str):
+        load_dotenv()
+        model = os.getenv("claude-3.5-haiku-20240620")
+        endpoint = os.getenv("ANTHROPIC-ENDPOINT")
         self.api_key = api_key
         self.model = model
         self.endpoint = endpoint
