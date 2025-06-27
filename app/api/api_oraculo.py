@@ -10,7 +10,7 @@ api_oraculo = APIRouter(tags=["oraculo"])
 
 
 @api_oraculo.post("/oracle/interpret-in-detail", response_model=InterpretationResponse)
-@limiter.limit("2/minute")
+@limiter.limit("10/minute")
 def interpret_spread_in_detail(request: Request, spread_request: Spread):
     oracle = Oracle()
     oracle_service = OracleService(oracle)
@@ -21,7 +21,7 @@ def interpret_spread_in_detail(request: Request, spread_request: Spread):
 
 
 @api_oraculo.post("/oracle/interpret-superficially", response_model=InterpretationResponse)
-@limiter.limit("2/minute")
+@limiter.limit("10/minute")
 def interpret_spread_superficially(request: Request, spread_request: Spread):
     oracle = Oracle()
     oracle_service = OracleService(oracle)

@@ -6,3 +6,4 @@ httpx
 python-dotenv
 slowapi
 requests
+anthropic
