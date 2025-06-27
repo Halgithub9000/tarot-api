@@ -1,4 +1,5 @@
 import os
+import anthropic
 from typing import Protocol
 from dotenv import load_dotenv
 import requests
@@ -18,7 +19,6 @@ class LLMAdapter(Protocol):
             "model": self.model
         }
 
-        print(self.endpoint + " " + str(payload) + " " + str(headers))
         response = requests.post(
             self.endpoint, headers=headers, json=payload, timeout=120)
 
@@ -62,3 +62,34 @@ class LLMDedpseekR10528Adapter(LLMAdapter):
         self.api_key = api_key
         self.model = model
         self.endpoint = endpoint
+
+
+class LLMClaudeHaiku35Adapter(LLMAdapter):
+    def __init__(self):
+        load_dotenv()
+        self.api_key = os.getenv("ANTHROPIC_TOKEN")
+        self.model = os.getenv("ANTHROPIC_CLAUDE_35_HAIKU_MODEL")
+        self.endpoint = os.getenv("ANTHROPIC_CLAUDE_35_HAIKU_ENDPOINT")
+        self.max_tokens = 8192
+        self.temperature = 1.0
+
+    def generate_interpretation(self, prompt: str) -> str:
+        client = anthropic.Anthropic(api_key=self.api_key)
+
+        try:
+            message = client.messages.create(
+                model=self.model,
+                max_tokens=self.max_tokens,
+                temperature=self.temperature,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ]
+            )
+            # El contenido de la respuesta está en message.content
+            return message.content[0].text if message.content else "No content returned from Claude."
+        except Exception as e:
+            print(f"Anthropic API error: {e}")
+            return f"Error: {e}"

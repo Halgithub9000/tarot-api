@@ -17,8 +17,6 @@ def verify_api_key(api_key: Optional[str] = Depends(api_key_header), request: Re
     valid_key = os.getenv("API_SECRET_KEY")
     client_ip = request.client.host if request else "Unknown"
 
-    print(valid_key)
-
     # Rechaza si la API Key no es válida
     if api_key != valid_key:
         raise_authorization_error(client_ip, api_key)
