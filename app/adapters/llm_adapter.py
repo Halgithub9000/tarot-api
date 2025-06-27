@@ -23,7 +23,7 @@ class LLMAdapter(Protocol):
             self.endpoint, headers=headers, json=payload, timeout=120)
 
         if response.status_code != 200:
-            print(str(response.status_code) + response.text)
+            print(str(response.status_code))
             return f"Error: {response.status_code} - {response.text}"
 
         result = response.json()
