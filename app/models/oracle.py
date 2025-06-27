@@ -42,6 +42,4 @@ class Oracle:
             f"Intención: {spread.intention}"
         )
 
-        print(prompt)
-
         return prompt
