@@ -6,7 +6,7 @@ from app.models.card import Card
 
 class Spread(BaseModel):
     cards: List[Card]
-    intention: str = Field(..., max_length=30)
+    intention: str = Field(..., max_length=100)
 
     @field_validator("intention")
     @classmethod
